@@ -1,0 +1,140 @@
+@media (max-width: 992px) {
+    section,
+    footer {
+        padding: 50px 50px;
+    }
+
+    .main-header {
+        padding-top: 90px;
+    }
+    .logo-container {
+        display: none;
+    }
+
+    .separator-container {
+        left: 5%;
+    }
+
+    .separator {
+        top: 10%;
+    }
+    .header-container {
+        padding: 0px 100px;
+        width: 100%;
+    }
+
+    .section-header h2 {
+        max-width: 100%;
+    }
+
+    .picture {
+        display: none;
+    }
+    .bar-item {
+        width: 50%;
+    }
+
+    .timeline-box {
+        margin-top: 100px;
+    }
+    .info-elem:last-of-type {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    section,
+    footer {
+        padding: 50px 20px;
+    }
+
+    .header-container {
+        padding: 0px 40px;
+    }
+    .separator-container {
+        display: none;
+    }
+
+    .sub-header-intro {
+        margin-right: 0px;
+        max-width: 100%
+    }
+
+    .history-item {
+        width: 30%;
+    }
+
+    .timeline-holder::before {
+        top: 0px;
+    }
+
+    .timeline-box {
+        padding-bottom: 150px;
+    }
+
+    .timeline-item {
+        width: 100%;
+    }
+
+    .divide-line {
+        height: 90px;
+        bottom: 20px;
+        top: auto;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 490px) {
+    .header-container {
+        padding: 0px 20px;
+    }
+
+    .head {
+        font-size: 2.6em;
+
+    }
+    .header-button {
+        align-self: flex-start;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .section-header h2 {
+        letter-spacing: 7px;
+        font-size: 2.1em;
+    }
+
+    .bar-item {
+        width: 100%;
+    }
+
+    .history-item {
+        width: 45%;
+        font-size: 15px;
+    }
+
+    .history-head {
+        width: 260px;
+    }
+
+    .timeline-item {
+        padding: 30px 0px;
+    }
+
+    .sn-info {
+        padding: 10px;
+    }
+    .info-elem:last-of-type {
+        min-width: 100%;
+    }
+
+    .info-elem:last-of-type > h4 {
+        display: none
+    }
+}

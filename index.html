@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>S4S - Squash For Silesia</title>
 
     <!--    Lato Font -->
@@ -12,10 +13,11 @@
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <!--   Font Awesome -->
     <link rel="stylesheet" href="css/fontawesome-all.css">
-    <!--    Restet Defoult CSS Style -->
-    <link rel="stylesheet" href="css/reset.css">
     <!--    Main Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!--    Responsive Style Sheet -->
+    <link rel="stylesheet" href="css/rwd.css">
+
 </head>
 
 
@@ -23,27 +25,20 @@
 <body>
     <header id="header" class="main-header">
         <div class="logo-container">
-            <div class="logo">
-                <div class="cut"></div>
-                <div class="cut"></div>
-            </div>
+            <img src="img/s4s-squash-for-silesia-OK-03.gif" alt="logo" class="logo">
             <div class="slogan-container">
-                <div>Squash</div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div id="slogan">Squash</div>
             </div>
         </div>
         <div class="separator-container">
             <div class="separator"></div>
         </div>
         <div class="header-container">
-                <h1 class="head">
-                    <span>squash</span>
-                    <span>for</span>
-                    <span>silesia</span>
-                </h1>
+            <h1 class="head">
+                <span>squash</span>
+                <span>for</span>
+                <span>silesia</span>
+            </h1>
             <div class="intro basic-text">
                 Nasze Stowarzyszenie powołane zostało do życia we wrześniu 2016 roku, jako formalny kontynuator grupy Silesia Squash Team, złożonej z pasjonatów gry w squasha. Naszym nadrzędnym celem jest stworzenie przestrzeni, w której można połączyć rywalizację sportową z dobrym klimatem. Squash bowiem to nie tylko sport. Squash to przede wszystkim społeczność która tworzy tą dyscyplinę, a której integracja jest Naszym kluczowym założeniem. Tworz ją razem z nami!
             </div>
@@ -53,8 +48,8 @@
         </div>
     </header>
 
-    <section id="about">
-        <div class="about-header">
+    <section id="about" class="sn-about">
+        <div class="section-header about-header">
             <h3>o nas</h3>
             <h2>wierzymy w atmosferę<span class="dot">.</span></h2>
             <div class="sub-header">
@@ -64,62 +59,66 @@
                 </div>
             </div>
         </div>
-        <div class="picture"></div>
+        <div class="picture picture-about"></div>
     </section>
 
-    <section id="detail">
+    <section id="detail" class="sn-detail">
         <div class="small-header">
-            <h3>S4S w liczbach <span class="dot">.</span></h3>
-            <h4>czyli czym na teraz możemy się pochwalić.</h4>
+            <h3>S4S w liczbach<span class="dot">.</span></h3>
+            <h4>czyli czym na teraz możemy się pochwalić</h4>
         </div>
         <div class="button">sprawdź</div>
 
         <div class="detail-bar">
             <div class="bar-item">
+                <div class="number-separator"></div>
                 <div class="number-box">
                     <div class="number">39</div>
-                    <loader>
+                    <div class="loader">
                         <div></div>
                         <div></div>
                         <div></div>
-                    </loader>
+                    </div>
                     <div class="caption-number">członkow stowarzyszenia</div>
                 </div>
             </div>
             <div class="bar-item">
+                <div class="number-separator"></div>
                 <div class="number-box">
                     <div class="number">18</div>
-                    <loader>
+                    <div class="loader">
                         <div></div>
                         <div></div>
                         <div></div>
-                    </loader>
+                    </div>
                     <div class="caption-number">
                         turniejow Silesia Cup
                     </div>
                 </div>
             </div>
             <div class="bar-item">
+                <div class="number-separator"></div>
                 <div class="number-box">
                     <div class="number">80</div>
-                    <loader>
+                    <div class="loader">
                         <div></div>
                         <div></div>
                         <div></div>
-                    </loader>
+                    </div>
                     <div class="caption-number">
                         średnia ilośc meczy w turnieju
                     </div>
                 </div>
             </div>
             <div class="bar-item">
+                <div class="number-separator"></div>
                 <div class="number-box">
                     <div class="number">672</div>
-                    <loader>
+                    <div class="loader">
                         <div></div>
                         <div></div>
                         <div></div>
-                    </loader>
+                    </div>
                     <div class="caption-number">
                         zużytych piłek
                     </div>
@@ -128,12 +127,12 @@
         </div>
     </section>
 
-    <section id="history">
+    <section id="history" class="sn-history">
         <h3 class="history-head">Co wydarzyło się?</h3>
         <div class="data-head">Luty 16'</div>
         <div class="data-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque iure nesciunt quo fuga et.</div>
         <div class="history-bar">
-            <div class="history-item">luty 16'</div>
+            <div class="history-item active">luty 16'</div>
             <div class="history-item">wrzesień 16'</div>
             <div class="history-item">grudzień 16'</div>
             <div class="history-item">lip-sie 17'</div>
@@ -142,11 +141,11 @@
         </div>
     </section>
 
-    <section id="timeline">
-        <div class="picture"></div>
-        <div class="timeline-header">
+    <section id="timeline" class="sn-timeline">
+        <div class="picture picture-timeline"></div>
+        <div class="timeline-header section-header">
             <h3>nasz cel</h3>
-            <h2>niemożliwe nie istnieje<span class="dot">.</span></h2>
+            <h2 class="hd-timeline">niemożliwe nie istnieje<span class="dot">.</span></h2>
             <div class="sub-header">
                 <div class="line"></div>
                 <div class="sub-header-intro basic-text">
@@ -154,59 +153,58 @@
                 </div>
             </div>
         </div>
-        <div class="timeline-box">
-            <div class="timeline-holder">
-                <div class="timeline-item right">
-                    <h3>integracja</h3>
-                    <div class="timeline-content">Integracja środowiska amatorskiego i zawodowego poprzez kontunuację organizacji serii turniejow: HEAD S4S Silesia Cup, Summer Squash Team Cup, inne turnieje oraz wydarzenia charytatywne.</div>
-                </div>
+    </section>
+    <section class="timeline-box">
+        <div class="timeline-holder right">
+            <div class="timeline-item">
+                <h3>integracja</h3>
+                <div class="timeline-content basic-text">Integracja środowiska amatorskiego i zawodowego poprzez kontunuację organizacji serii turniejow: HEAD S4S Silesia Cup, Summer Squash Team Cup, inne turnieje oraz wydarzenia charytatywne.</div>
             </div>
-            <div class="timeline-holder">
-                <div class="timeline-item">
-                    <h3>Junior</h3>
-                    <div class="timeline-content">Wdrożenie programu juniorskiego w 2019 roku mającego na celu zbudowanie kadry młodych zdolnych oraz zaplecza trenerskiego.</div>
-                </div>
-            </div>
-            <div class="timeline-holder">
-                <div class="timeline-item right">
-                    <h3>rozwoj</h3>
-                    <div class="timeline-content">Stworzenie profesjonalnych rozgrywek squasha: Indywidualnych Mistrzostw Śląska oraz Profesjonalnej i Centralnej Ligi Squasha na Śląsku</div>
-                </div>
-            </div>
-            <div class="timeline-holder">
-                <div class="timeline-item">
-                    <h3>atmosfera</h3>
-                    <div class="timeline-content">Budowa społeczności w oparciu o pozytywne relacje. Zgodnie z naszą maksymą wierzymy, że podstawą funkcjonowania dobrej społeczności są jej członkowie.</div>
-                </div>
-            </div>
-            <div class="divide-line"></div>
-            <div class="closer"></div>
         </div>
+        <div class="timeline-holder">
+            <div class="timeline-item">
+                <h3>Junior</h3>
+                <div class="timeline-content basic-text">Wdrożenie programu juniorskiego w 2019 roku mającego na celu zbudowanie kadry młodych zdolnych oraz zaplecza trenerskiego.</div>
+            </div>
+        </div>
+        <div class="timeline-holder right">
+            <div class="timeline-item">
+                <h3>rozwoj</h3>
+                <div class="timeline-content basic-text">Stworzenie profesjonalnych rozgrywek squasha: Indywidualnych Mistrzostw Śląska oraz Profesjonalnej i Centralnej Ligi Squasha na Śląsku</div>
+            </div>
+        </div>
+        <div class="timeline-holder">
+            <div class="timeline-item">
+                <h3>atmosfera</h3>
+                <div class="timeline-content basic-text">Budowa społeczności w oparciu o pozytywne relacje. Zgodnie z naszą maksymą wierzymy, że podstawą funkcjonowania dobrej społeczności są jej członkowie.</div>
+            </div>
+        </div>
+        <div class="divide-line"></div>
+        <div class="closer"></div>
     </section>
 
-    <footer id="contact">
+    <footer id="contact" class="sn-contact">
         <div class="small-header">
-            <h3>kontakt <span class="dot">.</span></h3>
+            <h3>kontakt<span class="dot">.</span></h3>
             <h4>czyli jak najłatwiej sie z nami skontaktować</h4>
         </div>
 
-        <div class="form-container">
-            <form action="">
-                <input type="text" placeholder="Imię" required>
-                <input type="text" placeholder="Nazwisko" required>
-                <input type="tel" placeholder="Nr telefonu" maxlength="9" required>
-                <input type="email" placeholder="E-Mail" required>
-                <textarea name="message" placeholder="Wpisz swoją wiadomość"></textarea>
-                <input type="submit" value="wyślij">
-            </form>
-        </div>
+        <form action="" class="form-container">
+            <input type="text" placeholder="Imię" required>
+            <input type="text" placeholder="Nazwisko" required>
+            <input type="tel" placeholder="Nr telefonu" maxlength="9" required>
+            <input type="email" placeholder="E-Mail" required>
+            <textarea name="message" placeholder="Wpisz swoją wiadomość"></textarea>
+            <input type="submit" value="wyślij">
+        </form>
+
         <div class="social-contact">
-            <a href="https://www.facebook.com/s4silesia/" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="mailto:"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.facebook.com/s4silesia/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:"><i class="far fa-envelope"></i></a>
         </div>
     </footer>
 
-    <section id="info">
+    <section id="info" class="sn-info">
         <div class="info-elem">
             <h4>Znajdź nas</h4>
             <div class="info-content">
@@ -216,7 +214,7 @@
         <div class="info-elem">
             <h4>Napisz do nas</h4>
             <div class="info-content">
-                <i class="fa fa-phone"></i> 111 111 111<br><i class="fa fa-envelope"></i>s4s@s4s<br>
+                <i class="fa fa-phone"></i> 111 111 111<br><i class="fa fa-envelope"></i> s4s@s4s<br>
             </div>
         </div>
         <div class="info-elem">
