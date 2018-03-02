@@ -89,6 +89,11 @@
 }
 
 @media (max-width: 490px) {
+    .first,
+    .second {
+        font-size: 35px;
+    }
+    
     .header-container {
         padding: 0px 20px;
     }

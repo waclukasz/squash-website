@@ -17,10 +17,22 @@
     <link rel="stylesheet" href="css/style.css">
     <!--    Responsive Style Sheet -->
     <link rel="stylesheet" href="css/rwd.css">
+    <!--    Animation Style Sheet -->
+    <link rel="stylesheet" href="css/animation.css">
 
 </head>
 
 <body>
+
+
+    <div class="main-loader">
+        <div class="first">Cześć<span class="dot">.</span>
+            <div class="cover first-cover"></div>
+        </div>
+        <div class="second">Dołącz do <span class="dot">nas.</span>
+            <div class="cover second-cover"></div>
+        </div>
+    </div>
 
     <nav id="navbar" class="main-navbar">
         <h2>squash for silesia</h2>
@@ -32,36 +44,35 @@
         </ul>
         <div class="social">
             <a href="https://www.facebook.com/s4silesia/" target="_blank">facebook</a>
-            <a href="mailto:">mail</a>
+            <a href="mailto:piasecki.qm@gmail.com">mail</a>
         </div>
     </nav>
-    
-    <div class="nav-toggler clicked">
+
+    <div class="nav-toggler clicked hide">
         <div class="cross"></div>
         <div class="cross"></div>
     </div>
 
-
     <header id="header" class="main-header">
-        <div class="logo-container">
+        <div class="logo-container hide">
             <img src="img/s4s-squash-for-silesia-OK-03.gif" alt="logo" class="logo">
             <div class="slogan-container">
                 <div id="slogan">Squash</div>
             </div>
         </div>
-        <div class="separator-container">
+        <div class="separator-container hide">
             <div class="separator"></div>
         </div>
         <div class="header-container">
             <h1 class="head">
-                <span>squash</span>
-                <span>for</span>
-                <span>silesia</span>
+                <span class="hide">squash</span>
+                <span class="hide">for</span>
+                <span class="hide">silesia</span>
             </h1>
-            <div class="intro basic-text">
+            <div class="intro basic-text hide">
                 Nasze Stowarzyszenie powołane zostało do życia we wrześniu 2016 roku, jako formalny kontynuator grupy Silesia Squash Team, złożonej z pasjonatów gry w squasha. Naszym nadrzędnym celem jest stworzenie przestrzeni, w której można połączyć rywalizację sportową z dobrym klimatem. Squash bowiem to nie tylko sport. Squash to przede wszystkim społeczność która tworzy tą dyscyplinę, a której integracja jest Naszym kluczowym założeniem. Tworz ją razem z nami!
             </div>
-            <div class="button header-button">
+            <div class="button header-button hide">
                 <a href="#contact" id="contact-button">kontakt</a>
             </div>
         </div>
@@ -208,18 +219,20 @@
             <h4>czyli jak najłatwiej sie z nami skontaktować</h4>
         </div>
 
-        <form action="" class="form-container">
-            <input type="text" placeholder="Imię" required>
-            <input type="text" placeholder="Nazwisko" required>
-            <input type="tel" placeholder="Nr telefonu" maxlength="9" required>
-            <input type="email" placeholder="E-Mail" required>
-            <textarea name="message" placeholder="Wpisz swoją wiadomość"></textarea>
+        <form action="https://formspree.io/wac.lukasz@gmail.com"
+      method="POST" class="form-container">
+            <input name="Imię:" type="text" placeholder="Imię" required>
+            <input name="Nazwisko:" type="text" placeholder="Nazwisko" required>
+            <input name="Numer Telefonu:" type="tel" placeholder="Nr telefonu" maxlength="9" required>
+            <input name="_replyto" type="email" placeholder="E-Mail" required>
+            <textarea name="Wiadomość:" placeholder="Wpisz swoją wiadomość"></textarea>
+<!--            <input type="hidden" name="_next" value="http://google.pl" >-->
             <input type="submit" value="wyślij">
         </form>
 
         <div class="social-contact">
             <a href="https://www.facebook.com/s4silesia/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="mailto:"><i class="far fa-envelope"></i></a>
+            <a href="mailto:piasecki.qm@gmail.com"><i class="far fa-envelope"></i></a>
         </div>
     </footer>
 

@@ -141,6 +141,67 @@ footer {
     margin-bottom: 50px;
 }
 
+.hide {
+    opacity: 0;
+}
+
+/* -------------------------------------
+MAIN LOADER 
+----------------------------------------*/
+.main-loader,
+.cover {
+    top: 0px;
+    right: 0px;
+    background-color: #272727;
+    z-index: 200;
+}
+
+.main-loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.first-cover {
+    animation: showFirst 1.4s .7s 1 ease-in;
+}
+.second-cover {
+    animation: showFirst 1.4s 2.1s 1 ease-in;
+}
+
+.first,
+.second {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 45px;    
+    font-weight: 300;
+    letter-spacing: 4px;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.first {
+    animation: 
+        spread .8s .7s 1 ease-in,
+        zindex 1.4s .7s 1;
+}
+
+.second {
+    animation: 
+        spread .8s 2.1s ease-in,
+        zindex 1.4s 2.1s ease-in;
+}
+
 /* -------------------------------------
 NAV-MENU
 ----------------------------------------*/
@@ -311,7 +372,7 @@ HEADER
 .separator {
     position: absolute;
     top: 15%;
-    height: 80%;
+    height: 0%;
     width: 100%;
     background-color: #c17b25;
 }
@@ -328,7 +389,7 @@ HEADER
     font-size: 3.6em;
     color: #f4f4f4;
     text-transform: uppercase;
-    letter-spacing: 25px;
+    letter-spacing: 5px;
 }
 
 .head > span {

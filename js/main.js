@@ -1,3 +1,9 @@
+$(function () {
+    // Make that every page reload starts from website top
+    $(document).scrollTop(0);
+    deleteLoader();
+});
+
 var counterStorage = (localStorage.getItem('counter')) ? localStorage.getItem('counter') : '771';
 
 // Expand Main Manu
@@ -115,7 +121,7 @@ $('.history-item').on('click', function () {
     }
 
 
-})
+});
 
 function expandMenu() {
     let $menu = $('#navbar');
@@ -147,7 +153,7 @@ function expandMenu() {
     }
 
 
-}
+};
 
 function togglerAnimation(e) {
     let $cross = $('.cross');
@@ -241,4 +247,74 @@ function togglerAnimation(e) {
     };
 
 
-}
+};
+
+// Remove CSS Loader Animation and run Header Loader Animation
+function deleteLoader() {
+    $('body').css({
+        height: 100 + "vh",
+        overflow: "hidden"
+    });
+
+    setTimeout(function () {
+        $('.main-loader').remove();
+        headerLoader();
+    }, 3300);
+};
+
+function headerLoader() {
+    let $squashText = $('.head > span:first-of-type');
+    let $forText = $('.head > span:nth-of-type(2)');
+    let $silesiaText = $('.head > span:last-of-type');
+    let $allHeaders = $('.head');
+    let $headersContainer = $('.header-container');
+
+    $squashText.delay(200).animate({
+        opacity: "1"
+    }, 300);
+    $forText.delay(500).animate({
+        opacity: "1"
+    }, 300);
+    $silesiaText.delay(800).animate({
+        opacity: "1"
+    }, 400, function () {
+        let $separatorContainer = $('.separator-container');
+        let $separatorItem = $('.separator');
+
+        $allHeaders.animate({
+            letterSpacing: "25px"
+        }, 700);
+
+        $separatorContainer.animate({
+            opacity: "1"
+        }, 800);
+        $separatorItem.animate({
+            height: "80%"
+        }, 800, function () {
+            let $logoContainer = $('.logo-container');
+            let $headerIntro = $('.intro');
+            let $headerButton = $('.header-button');
+            let $toggler = $('.nav-toggler');
+
+            $logoContainer.animate({
+                opacity: "1"
+            }, 600);
+            $headerIntro.animate({
+                opacity: "1"
+            }, 600);
+            $headerButton.delay(200).animate({
+                opacity: "1"
+            }, 400);
+            $toggler.delay(200).animate({
+                opacity: "1"
+            }, 400, function () {
+                $('body').css({
+                    height: "auto",
+                    overflow: "scroll"
+                });
+            });
+
+        });
+    });
+
+};

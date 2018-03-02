@@ -1,0 +1,25 @@
+@keyframes showFirst {
+    50% {
+        width: 0%;
+    }
+    
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes spread {
+    0% {
+        letter-spacing: 15px;
+    }
+    
+    100% {
+        letter-spacing: 4px;
+    }
+}
+
+@keyframes zindex {
+    0%, 100% {
+        z-index: 10;
+    }
+}
