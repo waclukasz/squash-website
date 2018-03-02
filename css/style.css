@@ -11,7 +11,6 @@ body {
     min-width: 350px;
 }
 
-
 .basic-text {
     letter-spacing: 1px;
     font-weight: 300;
@@ -143,6 +142,123 @@ footer {
 }
 
 /* -------------------------------------
+NAV-MENU
+----------------------------------------*/
+.main-navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    height: 0vh;
+    width: 100%;
+    background-color: #1b1b1b;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.main-navbar > * {
+    opacity: 0;
+}
+
+.main-navbar > h2 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    color: #7d7d7d;
+    font-family: 'Anton', sans-serif;
+}
+
+.main-navbar > .nav-container,
+.main-navbar > .social {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.nav-container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-item > a {
+    font-size: 2.2em;
+    letter-spacing: 10px;
+}
+
+.nav-item > a:hover,
+.social > a:hover {
+    color: #e5e5e5;
+}
+
+
+.nav-item > a,
+.social > a {
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #484848;
+    text-decoration: none;
+    transition: .4s all;
+
+}
+
+.social {
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0px 0px 30px 0px;
+}
+
+.social > a {
+    letter-spacing: 4px;
+}
+
+
+.nav-toggler {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    height: 10px;
+    width: 30px;
+    z-index: 1000;
+    transform: scale();
+    cursor: pointer;
+    transition: .4s;
+}
+
+.nav-toggler:hover {
+    transform: scale(1.2);
+}
+
+.nav-toggler:hover > .cross {
+    background-color: #c17b25;
+}
+
+.cross {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    background-color: white;
+    border-radius: 10px;
+    transition: .4s all ease;
+}
+
+.cross:first-of-type {
+    top: 0px;
+}
+.cross:last-of-type {
+    top: 100%;
+}
+
+
+/* -------------------------------------
 HEADER
 ----------------------------------------*/
 
@@ -151,7 +267,7 @@ HEADER
     flex-wrap: nowrap;
     position: relative;
     min-height: 100vh;
-    padding: 200px 0px 0px 0px;
+    padding: 140px 0px 0px 0px;
     overflow: hidden;
 }
 
@@ -394,6 +510,8 @@ HISTORY
     min-height: 140px;
     margin: 40px 0px;
     text-align: center;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .history-bar {

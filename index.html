@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>S4S - Squash For Silesia</title>
 
     <!--    Lato Font -->
@@ -20,9 +20,28 @@
 
 </head>
 
-
-
 <body>
+
+    <nav id="navbar" class="main-navbar">
+        <h2>squash for silesia</h2>
+        <ul class="nav-container">
+            <li class="nav-item"><a href="#header">home</a></li>
+            <li class="nav-item"><a href="#about">o nas</a></li>
+            <li class="nav-item"><a href="#timeline">nasz cel</a></li>
+            <li class="nav-item"><a href="#contact">kontakt</a></li>
+        </ul>
+        <div class="social">
+            <a href="https://www.facebook.com/s4silesia/" target="_blank">facebook</a>
+            <a href="mailto:">mail</a>
+        </div>
+    </nav>
+    
+    <div class="nav-toggler clicked">
+        <div class="cross"></div>
+        <div class="cross"></div>
+    </div>
+
+
     <header id="header" class="main-header">
         <div class="logo-container">
             <img src="img/s4s-squash-for-silesia-OK-03.gif" alt="logo" class="logo">
@@ -43,7 +62,7 @@
                 Nasze Stowarzyszenie powołane zostało do życia we wrześniu 2016 roku, jako formalny kontynuator grupy Silesia Squash Team, złożonej z pasjonatów gry w squasha. Naszym nadrzędnym celem jest stworzenie przestrzeni, w której można połączyć rywalizację sportową z dobrym klimatem. Squash bowiem to nie tylko sport. Squash to przede wszystkim społeczność która tworzy tą dyscyplinę, a której integracja jest Naszym kluczowym założeniem. Tworz ją razem z nami!
             </div>
             <div class="button header-button">
-                <a href="">kontakt</a>
+                <a href="#contact" id="contact-button">kontakt</a>
             </div>
         </div>
     </header>
@@ -67,7 +86,7 @@
             <h3>S4S w liczbach<span class="dot">.</span></h3>
             <h4>czyli czym na teraz możemy się pochwalić</h4>
         </div>
-        <div class="button">sprawdź</div>
+        <div class="button" id="number-button">sprawdź</div>
 
         <div class="detail-bar">
             <div class="bar-item">
@@ -113,7 +132,7 @@
             <div class="bar-item">
                 <div class="number-separator"></div>
                 <div class="number-box">
-                    <div class="number">672</div>
+                    <div class="number" id="balls">672</div>
                     <div class="loader">
                         <div></div>
                         <div></div>
@@ -129,10 +148,10 @@
 
     <section id="history" class="sn-history">
         <h3 class="history-head">Co wydarzyło się?</h3>
-        <div class="data-head">Luty 16'</div>
-        <div class="data-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque iure nesciunt quo fuga et.</div>
+        <div class="data-head">Kliknij w datę</div>
+        <div class="data-content">I sprawdź naszą historię.</div>
         <div class="history-bar">
-            <div class="history-item active">luty 16'</div>
+            <div class="history-item">luty 16'</div>
             <div class="history-item">wrzesień 16'</div>
             <div class="history-item">grudzień 16'</div>
             <div class="history-item">lip-sie 17'</div>
