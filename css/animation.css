@@ -1,3 +1,14 @@
+@keyframes loader {
+    from {
+        background-color: rgba(255, 255, 255, 0.63);
+    }
+
+    to {
+        background-color: #c17b25;
+    }
+}
+
+
 @keyframes showFirst {
     50% {
         width: 0%;

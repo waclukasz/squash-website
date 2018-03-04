@@ -818,6 +818,7 @@ FOOTER
     line-height: 28px;
     letter-spacing: 2px;
     font-size: 14px;
+    color: #828282;
 }
 
 .info-elem:last-of-type {
@@ -834,12 +835,7 @@ FOOTER
     font-weight: 300;
 }
 
-@keyframes loader {
-    from {
-        background-color: rgba(255, 255, 255, 0.63);
-    }
-
-    to {
-        background-color: #c17b25;
-    }
+.info-content > img {
+    max-height: 20px;
+    filter: grayscale(2);
 }

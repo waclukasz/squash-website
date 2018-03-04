@@ -39,6 +39,7 @@
     }
     .info-elem:last-of-type {
         width: 100%;
+        order: -1;
     }
 
 }
