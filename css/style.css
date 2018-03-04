@@ -838,4 +838,5 @@ FOOTER
 .info-content > img {
     max-height: 20px;
     filter: grayscale(2);
+    margin: 0px 10px;
 }

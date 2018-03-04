@@ -1,7 +1,7 @@
 $(function () {
     // Make that every page reload starts from website top
-    $(document).scrollTop(0);
     deleteLoader();
+    sloganChange();
 
     var counterStorage = (localStorage.getItem('counter')) ? localStorage.getItem('counter') : '771';
 
@@ -259,6 +259,9 @@ $(function () {
             $('.main-loader').remove();
             headerLoader();
         }, 3300);
+        
+        $('html, body').scrollTop(0);
+        
     };
 
     function headerLoader() {
@@ -317,4 +320,19 @@ $(function () {
         });
 
     };
+    
+    function sloganChange() {
+        let $slogan = $('#slogan');
+        const sloganText = ['Squash', 'Silesia', 'Fun!', 'Power', 'Team'];
+        let textCounter = -1;
+        
+        setInterval(function(){
+            textCounter++;
+            textCounter = (textCounter > 4) ? textCounter = 0 : textCounter;
+            
+            $slogan.text(sloganText[textCounter]);
+            
+        }, 300);
+        
+    }
 });
