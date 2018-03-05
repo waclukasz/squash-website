@@ -349,7 +349,8 @@ HEADER
 
 .slogan-container {
     position: absolute;
-    bottom: 20%;
+    min-height: 160px;
+    bottom: 20px;
     right: 50px;
 }
 
